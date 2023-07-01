@@ -14,7 +14,7 @@ while True:
     if not next_page:
         break
     url = f'https://crates.io/api/v1/crates{next_page}'
-    with open('../url.txt', 'a') as f:
+    with open('../urls.txt', 'a') as f:
         f.write(f'{url}\n')
 
 with open('../crates.json','w') as f:
